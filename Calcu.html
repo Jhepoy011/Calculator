@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Calculator </title>
+       <link rel="stylesheet" href="calcu.css">    
+  </head>
+  
+  <body bgcolor="black">
+    <br /><br /><br /><br /><br /><br />
+    <center>
+    <fieldset>
+    <br /><br /><br /><br />
+    <form name="calculator">
+      <input id="display" type="text" name="shadow" readonly="readonly">
+      <input id="reset" type="reset" value="C" onclick="calculator.shadow.value += ' '">
+      <br />
+      <input id="button" type="button" value="7" onclick="calculator.shadow.value += '7'">
+      <input id="button" type="button" value="8" onclick="calculator.shadow.value += '8'">
+      <input id="button" type="button" value="9" onclick="calculator.shadow.value += '9'">&nbsp&nbsp
+      <input class="button" type="button" value="+" onclick="calculator.shadow.value += '+'">
+      <br />
+      <input id="button" type="button" value="4" onclick="calculator.shadow.value += '4'">
+      <input id="button" type="button" value="5" onclick="calculator.shadow.value += '5'">
+      <input id="button" type="button" value="6" onclick="calculator.shadow.value += '6'">&nbsp&nbsp
+      <input class="button" type="button" value="-" onclick="calculator.shadow.value += '-'">
+      <br />
+      <input id="button" type="button" value="1" onclick="calculator.shadow.value += '1'">
+      <input id="button" type="button" value="2" onclick="calculator.shadow.value += '2'">
+      <input id="button" type="button" value="3" onclick="calculator.shadow.value += '3'">&nbsp&nbsp
+      <input class="button" type="button" value="x" onclick="calculator.shadow.value += '*'">
+      <br />
+      <input id="button" type="button" value="0" onclick="calculator.shadow.value += '0'">
+      <input class="button" type="button" value="." onclick="calculator.shadow.value += '.'">
+      <input class="button" type="button" value="=" onclick="calculator.shadow.value =eval(calculator.shadow.value)">&nbsp&nbsp
+      <input class="button" type="button" value="/" onclick="calculator.shadow.value += '/'">
+      </form>
+    </fieldset>
+    </center>
+  </body>
+</html>
